@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio Developer Edition 9.0.11.3078 (http://www.liquid-technologies.com)-->
+<xs:schema xmlns:tns="http://b2b.rubezh.ru/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://b2b.rubezh.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="OS">
+        <xs:attribute name="guid" type="xs:string" use="required" />
+        <xs:attribute name="code" type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="ProtectionOfOS">
+        <xs:sequence>
+            <xs:element name="OS" type="tns:OS" minOccurs="1" maxOccurs="1" />
+            <xs:element name="TypesOfProducts" type="tns:typeProductProtection" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="responsible" type="tns:responsible" />
+        </xs:sequence>
+        <xs:attribute name="guid" type="xs:string" use="required" />
+        <xs:attribute name="guid_client" type="xs:string" use="required" />
+        <xs:attribute name="number" type="xs:string" />
+        <xs:attribute name="dateDoc" type="xs:dateTime" />
+        <xs:attribute name="operation" type="xs:string" use="required" />
+        <xs:attribute name="reason" type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="createProtectionOfOS">
+        <xs:choice>
+            <xs:element name="ProtectionOfOS" type="tns:ProtectionOfOS" minOccurs="0" maxOccurs="unbounded" />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="getProtectionOfOS">
+        <xs:attribute name="GUID_OS" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeProductProtection">
+        <xs:attribute name="name" type="xs:string" use="required" />
+        <xs:attribute name="reason" type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="responsible">
+        <xs:attribute name="name" type="xs:string" />
+        <xs:attribute name="phone" type="xs:string" />
+        <xs:attribute name="email" type="xs:string" />
+    </xs:complexType>
+</xs:schema>
