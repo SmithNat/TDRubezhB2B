@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio Developer Edition 9.0.11.3078 (http://www.liquid-technologies.com)-->
+<xs:schema xmlns:tns="http://b2b.rubezh.ru/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://b2b.rubezh.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="CreateRequestProtectionOfProject">
+        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="RequestProtectionOfProject" type="tns:RequestProtectionOfProject" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RequestProtectionOfProject">
+        <xs:sequence>
+            <xs:element name="POS" type="tns:POS" minOccurs="1" maxOccurs="1" />
+            <xs:element name="filesLists" type="tns:file" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="RelatedClientList" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Client" minOccurs="1" maxOccurs="1">
+                            <xs:complexType>
+                                <xs:complexContent>
+                                    <xs:extension base="tns:Client" />
+                                </xs:complexContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="TypeClient" type="xs:string" use="required" />
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="TypesOfProducts" type="tns:typeProductProtection" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="responsible" type="tns:responsible" />
+        </xs:sequence>
+        <xs:attribute name="guid" type="xs:string" use="required" />
+        <xs:attribute name="guid_client" type="xs:string" use="required" />
+        <xs:attribute name="number" type="xs:string" />
+        <xs:attribute name="dateDoc" type="xs:dateTime" />
+        <xs:attribute name="status" type="xs:string" use="required" />
+        <xs:attribute name="TypeOS" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="POS">
+        <xs:sequence>
+            <xs:element name="region" type="tns:region" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="guid" type="xs:string" use="required" />
+        <xs:attribute name="code" type="xs:string" />
+        <xs:attribute name="name" type="xs:string" />
+        <xs:attribute name="address" type="xs:string" />
+        <xs:attribute name="datePlanRelease" type="xs:date" />
+        <xs:attribute name="NumberCadastral" type="xs:string" />
+        <xs:attribute name="Reconstruction" type="xs:boolean" />
+        <xs:attribute name="datePlanShipment" type="xs:date" />
+        <xs:attribute name="Square" type="xs:decimal" />
+    </xs:complexType>
+    <xs:complexType name="region">
+        <xs:attribute name="AddressElementCode" type="xs:decimal" use="required" />
+    </xs:complexType>
+    <xs:complexType name="file">
+        <xs:attribute name="Type" type="xs:string" use="required" />
+        <xs:attribute name="name" type="xs:string" use="required" />
+        <xs:attribute name="folder" type="xs:string" use="required" />
+        <xs:attribute name="serverFTP" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeProductProtection">
+        <xs:attribute name="name" type="xs:string" use="required" />
+        <xs:attribute name="reason" type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="Client">
+        <xs:attribute name="name" type="xs:string" />
+        <xs:attribute name="INN" type="xs:string" use="required" />
+        <xs:attribute name="KPP" type="xs:string" />
+        <xs:attribute name="IsLegalPerson" type="xs:boolean" use="required" />
+    </xs:complexType>
+    <xs:complexType name="responsible">
+        <xs:attribute name="name" type="xs:string" />
+        <xs:attribute name="phone" type="xs:string" />
+        <xs:attribute name="email" type="xs:string" />
+    </xs:complexType>
+</xs:schema>
