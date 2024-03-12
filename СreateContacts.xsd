@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio Developer Edition 9.0.11.3078 (http://www.liquid-technologies.com)-->
+<xs:schema xmlns:tns="http://b2b.rubezh.ru/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://b2b.rubezh.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="createContacts">
+        <xs:sequence>
+            <xs:element name="FIO" type="xs:string" />
+            <xs:element name="Phone" type="xs:string" />
+            <xs:element name="Email" type="xs:string" />
+            <xs:element name="Cooperation" type="xs:string" />
+            <xs:element name="Position" type="xs:string" minOccurs="0" />
+            <xs:element name="CompanyInfo" type="tns:CompanyInfo" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CompanyInfo">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string" />
+            <xs:element name="INN" type="xs:string" />
+            <xs:element name="Phone" type="xs:string" />
+            <xs:element name="KPP" type="xs:string" minOccurs="0" />
+            <xs:element name="GUID" type="xs:string" minOccurs="0" />
+            <xs:element name="ActualAdress" type="xs:string" minOccurs="0" />
+            <xs:element name="LegalAdress" type="xs:string" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
