@@ -49,7 +49,7 @@
         <xs:attribute name="Square" type="xs:decimal" />
     </xs:complexType>
     <xs:complexType name="region">
-        <xs:attribute name="AddressElementCode" type="xs:decimal" use="required" />
+        <xs:attribute name="AddressElementCode" type="xs:string" use="required" />
     </xs:complexType>
     <xs:complexType name="file">
         <xs:attribute name="Type" type="xs:string" use="required" />
