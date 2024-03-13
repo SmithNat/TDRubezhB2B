@@ -58,19 +58,13 @@
     </xs:complexType>
     <xs:complexType name="DeliveryInfo">
         <xs:sequence>
-            <xs:element name="DeliveryType" type="xs:string" />
             <xs:element name="DeliveryCompanyId" type="xs:string" minOccurs="0" />
             <xs:element name="DeliveryMethod" type="xs:string" minOccurs="0" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="ConsigneeInfo">
         <xs:sequence>
-            <xs:element name="FullName" type="xs:string" />
-            <xs:element name="INN" type="xs:string" />
-            <xs:element name="KPP" type="xs:string" />
-            <xs:element name="Email" type="xs:string" />
-            <xs:element name="Phone" type="xs:string" />
-            <xs:element name="Address" type="xs:string" />
+            <xs:element name="id" type="xs:string" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="AdditionalDeliveryInformation">
