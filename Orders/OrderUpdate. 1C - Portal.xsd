@@ -14,22 +14,22 @@
     </xs:complexType>
     <xs:complexType name="OrderInfo">
         <xs:sequence>
-			<xs:element name="PortalOrderID" type="xs:int" minOccurs="0" />
-			<xs:element name="ExternalOrderID" type="xs:string" />
-			<xs:element name="ExternalOrderNumber" type="xs:string" />
-			<xs:element name="DateCreate" type="xs:dateTime" />
-			<xs:element name="DateLastModify" type="xs:dateTime" />
-			<xs:element name="Status" type="xs:string" />
-			<xs:element name="TotalPrice" type="xs:float" />
-			<xs:element name="Comment" type="xs:string" minOccurs="0" />
-		</xs:sequence>
+		<xs:element name="PortalOrderID" type="xs:int" minOccurs="0" />
+		<xs:element name="ExternalOrderID" type="xs:string" />
+		<xs:element name="ExternalOrderNumber" type="xs:string" />
+		<xs:element name="DateCreate" type="xs:dateTime" />
+		<xs:element name="DateLastModify" type="xs:dateTime" />
+		<xs:element name="Status" type="xs:string" />
+		<xs:element name="TotalPrice" type="xs:float" />
+		<xs:element name="Comment" type="xs:string" minOccurs="0" />
+	</xs:sequence>
     </xs:complexType>
     <xs:complexType name="LegalEntityInfo">
         <xs:sequence>
-			<xs:element name="ContragentID" type="xs:string" />
-			<xs:element name="ContractID" type="xs:string" />
-			<xs:element name="Warehous" type="xs:string" />
-		</xs:sequence>
+		<xs:element name="ContragentID" type="xs:string" />
+		<xs:element name="ContractID" type="xs:string" />
+		<xs:element name="Warehous" type="xs:string" />
+	</xs:sequence>
     </xs:complexType>
     <xs:complexType name="ContactPersonInfo">
         <xs:sequence>
@@ -58,19 +58,13 @@
     </xs:complexType>
     <xs:complexType name="DeliveryInfo">
         <xs:sequence>
-            <xs:element name="DeliveryType" type="xs:string" />
             <xs:element name="DeliveryCompanyId" type="xs:string" minOccurs="0" />
             <xs:element name="DeliveryMethod" type="xs:string" minOccurs="0" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="ConsigneeInfo">
         <xs:sequence>
-            <xs:element name="FullName" type="xs:string" />
-            <xs:element name="INN" type="xs:string" />
-            <xs:element name="KPP" type="xs:string" />
-            <xs:element name="Email" type="xs:string" />
-            <xs:element name="Phone" type="xs:string" />
-            <xs:element name="Address" type="xs:string" />
+            <xs:element name="id" type="xs:string" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="AdditionalDeliveryInformation">
@@ -87,14 +81,14 @@
     </xs:complexType>
     <xs:complexType name="Product">
         <xs:sequence>
-			<xs:element name="ID" type="xs:string" />
-			<xs:element name="Count" type="xs:int" />
-			<xs:element name="Price" type="xs:float" />
-			<xs:element name="AvailableForShipment" type="xs:int" minOccurs="0" />
-			<xs:element name="ShippedCount" type="xs:int" minOccurs="0" />
-			<xs:element name="Status" type="xs:string" minOccurs="0" />
-			<xs:element name="Added" type="xs:boolean" minOccurs="0" />
-			<xs:element name="Deleted" type="xs:boolean" minOccurs="0" />
-		</xs:sequence>
+		<xs:element name="ID" type="xs:string" />
+		<xs:element name="Count" type="xs:int" />
+		<xs:element name="Price" type="xs:float" />
+		<xs:element name="AvailableForShipment" type="xs:int" minOccurs="0" />
+		<xs:element name="ShippedCount" type="xs:int" minOccurs="0" />
+		<xs:element name="Status" type="xs:string" minOccurs="0" />
+		<xs:element name="Added" type="xs:boolean" minOccurs="0" />
+		<xs:element name="Deleted" type="xs:boolean" minOccurs="0" />
+	</xs:sequence>
     </xs:complexType>
 </xs:schema>
