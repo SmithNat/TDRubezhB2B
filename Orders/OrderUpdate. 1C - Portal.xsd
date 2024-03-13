@@ -64,7 +64,8 @@
     </xs:complexType>
     <xs:complexType name="ConsigneeInfo">
         <xs:sequence>
-            <xs:element name="id" type="xs:string" />
+            <xs:element name="Id" type="xs:string" />
+            <xs:element name="Address" type="xs:string" minOccurs="0" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="AdditionalDeliveryInformation">
