@@ -10,7 +10,7 @@
             <xs:element name="ConsigneeInfo" type="tns:ConsigneeInfo" />
             <xs:element name="AdditionalDeliveryInformation" type="tns:AdditionalDeliveryInformation" />
             <xs:element name="Products" type="tns:Products" />
-            <xs:element name="Documents" type="tns:Documents" />
+            <xs:element name="Documents" type="tns:Documents" minOccurs="0" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="OrderInfo">
