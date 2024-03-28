@@ -8,6 +8,7 @@
         </xs:sequence>
         <xs:attribute name="GUID_client" type="xs:string" use="required" />
         <xs:attribute name="GUID_contract" type="xs:string" use="required" />
+        <xs:attribute name="RequestPrice" type="xs:boolean" />
     </xs:complexType>
     <xs:complexType name="NomenlatureList">
         <xs:attribute name="GUID_nom" type="xs:string" use="required" />
