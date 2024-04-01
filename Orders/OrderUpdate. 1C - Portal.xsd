@@ -97,7 +97,7 @@
         <xs:sequence>
             <xs:element name="Name" type="xs:string" />
             <xs:element name="Description" type="xs:string" />
-            <xs:element name="Entity" type="xs:dateTime" />
+            <xs:element name="Entity" type="xs:string" />
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
