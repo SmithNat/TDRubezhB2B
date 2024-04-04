@@ -12,6 +12,7 @@
             <xs:element name="filesLists" type="tns:file" minOccurs="1" maxOccurs="unbounded" />
             <xs:element name="typeProductMRC" type="tns:typeProductMRC" minOccurs="1" maxOccurs="unbounded" />
             <xs:element name="responsible" type="tns:responsible" />
+            <xs:element name="buyer" type="tns:Client" minOccurs="1" maxOccurs="1" />
         </xs:sequence>
         <xs:attribute name="guid" type="xs:string" use="required" />
         <xs:attribute name="guid_client" type="xs:string" use="required" />
@@ -52,5 +53,11 @@
         <xs:attribute name="name" type="xs:string" />
         <xs:attribute name="phone" type="xs:string" />
         <xs:attribute name="email" type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="Client">
+        <xs:attribute name="name" type="xs:string" />
+        <xs:attribute name="INN" type="xs:string" use="required" />
+        <xs:attribute name="KPP" type="xs:string" />
+        <xs:attribute name="IsLegalPerson" type="xs:boolean" use="required" />
     </xs:complexType>
 </xs:schema>
