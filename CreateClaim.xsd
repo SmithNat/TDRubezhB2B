@@ -5,7 +5,7 @@
         <xs:sequence>
             <xs:element name="ReturnList" type="tns:ReturnList" maxOccurs="unbounded" />
             <xs:element name="ConsigneeInfo" type="tns:ConsigneeInfo" />
-            <xs:element name="TTNFiles" type="tns:TTNFiles" minOccurs="0" />
+            <xs:element name="TTNFiles" type="tns:TTNFiles" minOccurs="0" maxOccurs="unbounded" />
             <xs:element name="ReturnMethod" type="tns:ReturnMethod" />
         </xs:sequence>
         <xs:attribute name="GUID_client" type="xs:string" use="required" />
