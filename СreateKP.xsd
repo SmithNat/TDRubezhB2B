@@ -6,6 +6,7 @@
             <xs:element name="NomenlatureList" type="tns:NomenlatureList" maxOccurs="unbounded" />
             <xs:element name="OSInfo" type="tns:OSInfo" minOccurs="0" />
         </xs:sequence>
+        <xs:attribute name="PortalOrderID" type="xs:int" use="required" />
         <xs:attribute name="GUID_client" type="xs:string" use="required" />
         <xs:attribute name="GUID_contract" type="xs:string" use="required" />
         <xs:attribute name="RequestPrice" type="xs:boolean" />
