@@ -29,6 +29,7 @@
     <xs:complexType name="typeProductProtection">
         <xs:attribute name="name" type="xs:string" use="required" />
         <xs:attribute name="reason" type="xs:string" />
+        <xs:attribute name="ProjectProduct" type="xs:boolean" />
     </xs:complexType>
     <xs:complexType name="responsible">
         <xs:attribute name="name" type="xs:string" />

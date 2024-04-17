@@ -33,6 +33,7 @@
         <xs:attribute name="dateDoc" type="xs:dateTime" />
         <xs:attribute name="status" type="xs:string" use="required" />
         <xs:attribute name="TypeOS" type="xs:string" use="required" />
+        <xs:attribute name="ProjectProductsContain" type="xs:boolean" use="required" />
     </xs:complexType>
     <xs:complexType name="POS">
         <xs:sequence>
