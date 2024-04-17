@@ -3,7 +3,7 @@
 <xs:schema xmlns:tns="http://b2b.rubezh.ru/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://b2b.rubezh.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:complexType name="ResponseMemo">
         <xs:sequence>
-            <xs:element name="Memo" type="tns:Memo" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="Memo" type="tns:Memo" minOccurs="1" maxOccurs="unbounded" />
         </xs:sequence>
         <xs:attribute name="ID" type="xs:string" use="required" />
         <xs:attribute name="IsMany" type="xs:boolean" use="required" />
