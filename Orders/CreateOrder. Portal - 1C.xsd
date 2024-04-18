@@ -5,7 +5,7 @@
             <xs:element name="OrderInfo" type="tns:OrderInfo" />
             <xs:element name="LegalEntityInfo" type="tns:LegalEntityInfo" />
             <xs:element name="ContactPersonInfo" type="tns:ContactPersonInfo" />
-            <xs:element name="ConstructionObjectsInfo" type="tns:ConstructionObjectsInfo" />
+            <xs:element name="ConstructionObjectsInfo" type="tns:ConstructionObjectsInfo" minOccurs="0"/>
             <xs:element name="DeliveryInfo" type="tns:DeliveryInfo" />
             <xs:element name="ConsigneeInfo" type="tns:ConsigneeInfo" />
             <xs:element name="AdditionalDeliveryInformation" type="tns:AdditionalDeliveryInformation" />
