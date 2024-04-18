@@ -40,7 +40,7 @@
     </xs:complexType>
     <xs:complexType name="ConstructionObjectsInfo">
         <xs:sequence>
-            <xs:element name="ConstructionObject" type="tns:ConstructionObject" maxOccurs="unbounded" />
+            <xs:element name="ConstructionObject" type="tns:ConstructionObject" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="ConstructionObject">
