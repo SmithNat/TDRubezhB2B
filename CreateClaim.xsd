@@ -7,6 +7,7 @@
             <xs:element name="ConsigneeInfo" type="tns:ConsigneeInfo" />
             <xs:element name="TTNFiles" type="tns:TTNFiles" minOccurs="0" maxOccurs="unbounded" />
             <xs:element name="ReturnMethod" type="tns:ReturnMethod" />
+            <xs:element name="ClientClaim" type="tns:ClientClaim" minOccurs="0" maxOccurs="1" />
         </xs:sequence>
         <xs:attribute name="GUID_client" type="xs:string" use="required" />
         <xs:attribute name="PortalOrderID" type="xs:int" use="required" />
@@ -43,5 +44,11 @@
         <xs:attribute name="TrecNum" type="xs:string" />
         <xs:attribute name="CompName" type="xs:string" />
         <xs:attribute name="FileName" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="ClientClaim">
+        <xs:attribute name="name" type="xs:string" use="required" />
+        <xs:attribute name="INN" type="xs:string" use="required" />
+        <xs:attribute name="KPP" type="xs:string" />
+        <xs:attribute name="address" type="xs:string" />
     </xs:complexType>
 </xs:schema>
