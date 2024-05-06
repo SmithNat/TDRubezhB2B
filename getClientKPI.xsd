@@ -15,5 +15,6 @@
         <xs:attribute name="fact" type="xs:decimal" />
         <xs:attribute name="percent" type="xs:decimal" />
         <xs:attribute name="score" type="xs:decimal" />
+        <xs:attribute name="scoreMax" type="xs:decimal" />
     </xs:complexType>
 </xs:schema>
