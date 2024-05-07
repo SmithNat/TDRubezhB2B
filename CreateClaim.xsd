@@ -16,8 +16,8 @@
     </xs:complexType>
     <xs:complexType name="ReturnList">
         <xs:sequence>
-            <xs:element name="GUID_nom" type="xs:string" maxOccurs="1" />
-            <xs:element name="SN" type="xs:string" minOccurs="1" />
+            <xs:element name="GUID_nom" type="xs:string" />
+            <xs:element name="SN" type="xs:string" />
             <xs:element name="DateProd" type="xs:date" />
             <xs:element name="guarantee" type="xs:boolean" />
             <xs:element name="ServiceConditions" type="xs:int" minOccurs="0" />
@@ -26,6 +26,7 @@
             <xs:element name="CharacteristicProblem" type="xs:int" minOccurs="0" />
             <xs:element name="CharacteristicText" type="xs:string" />
             <xs:element name="GUID_OS" type="xs:string" minOccurs="0" />
+            <xs:element name="textList" type="xs:string" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="ReturnMethod">
