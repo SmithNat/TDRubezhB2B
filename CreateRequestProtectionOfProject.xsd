@@ -38,6 +38,7 @@
     <xs:complexType name="POS">
         <xs:sequence>
             <xs:element name="region" type="tns:region" minOccurs="1" maxOccurs="1" />
+            <xs:element name="addressKI" type="xs:string" minOccurs="1" maxOccurs="1" />
         </xs:sequence>
         <xs:attribute name="guid" type="xs:string" use="required" />
         <xs:attribute name="code" type="xs:string" />
@@ -48,6 +49,8 @@
         <xs:attribute name="Reconstruction" type="xs:boolean" />
         <xs:attribute name="datePlanShipment" type="xs:date" />
         <xs:attribute name="Square" type="xs:decimal" />
+        <xs:attribute name="Width" type="xs:string" />
+        <xs:attribute name="Longitude" type="xs:string" />
     </xs:complexType>
     <xs:complexType name="region">
         <xs:attribute name="AddressElementCode" type="xs:string" use="required" />
