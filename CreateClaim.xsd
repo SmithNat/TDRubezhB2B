@@ -12,6 +12,7 @@
         </xs:sequence>
         <xs:attribute name="GUID_client" type="xs:string" />
         <xs:attribute name="PortalOrderID" type="xs:int" use="required" />
+        <xs:attribute name="PortalIdentifier" type="xs:string" />
         <xs:attribute name="Comment" type="xs:string" />
         <xs:attribute name="GPFile" type="xs:string" />
     </xs:complexType>
