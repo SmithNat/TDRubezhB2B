@@ -57,7 +57,7 @@
         <xs:sequence>
             <xs:element name="ProductType" type="xs:string" />
             <xs:element name="ProductPrice" type="xs:float" />
-            <xs:element name="ProductPercent" type="xs:double" />
+            <xs:element name="ProductPercent" type="xs:double" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="DeliveryInfo">
