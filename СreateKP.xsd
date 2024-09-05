@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML Studio Developer Edition 9.0.11.3078 (http://www.liquid-technologies.com)-->
 <xs:schema xmlns:tns="http://b2b.rubezh.ru/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://b2b.rubezh.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:complexType name="createKP">
         <xs:sequence>
@@ -11,7 +10,8 @@
         <xs:attribute name="GUID_contract" type="xs:string" use="required" />
         <xs:attribute name="RequestPrice" type="xs:boolean" />
         <xs:attribute name="RequestTime" type="xs:boolean" />
-        <xs:attribute name="Comment" type="xs:string" />
+        <xs:attribute name="GUID_ContactPerson" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
     </xs:complexType>
     <xs:complexType name="NomenlatureList">
         <xs:attribute name="GUID_nom" type="xs:string" use="required" />
