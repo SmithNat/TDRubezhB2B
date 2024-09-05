@@ -11,6 +11,7 @@
         <xs:attribute name="GUID_contract" type="xs:string" use="required" />
         <xs:attribute name="RequestPrice" type="xs:boolean" />
         <xs:attribute name="RequestTime" type="xs:boolean" />
+        <xs:attribute name="Comment" type="xs:string" />
     </xs:complexType>
     <xs:complexType name="NomenlatureList">
         <xs:attribute name="GUID_nom" type="xs:string" use="required" />
