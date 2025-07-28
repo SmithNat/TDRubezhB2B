@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:tns="http://b2b.rubezh.ru/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://b2b.rubezh.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="UpdateContact">
+        <xs:sequence>
+            <xs:element name="guid" type="xs:string"  use="required"/>
+            <xs:element name="FIO" type="xs:string"/>
+            <xs:element name="Phone" type="xs:string"/>
+            <xs:element name="Email" type="xs:string"/>
+            <xs:element name="Cooperation" type="xs:string" minOccurs="0"/>
+            <xs:element name="Position" type="xs:string" minOccurs="0" />
+            <xs:element name="Contractors" type="tns:Contractor" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Contractor">
+        <xs:sequence>
+            <xs:element name="xmlId" type="xs:string" use="required"/>
+            <xs:element name="active" type="xs:boolean" use="required"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
