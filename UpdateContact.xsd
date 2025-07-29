@@ -8,10 +8,15 @@
             <xs:element name="Email" type="xs:string"/>
             <xs:element name="Cooperation" type="xs:string" minOccurs="0"/>
             <xs:element name="Position" type="xs:string" minOccurs="0" />
-            <xs:element name="Contractors" type="tns:Contractor" minOccurs="0"/>
+            <xs:element name="Contractors" type="tns:ContractorsType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="Contractor">
+    <xs:complexType name="ContractorsType">
+        <xs:sequence>
+            <xs:element name="Contractor" type="tns:ContractorType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ContractorType">
         <xs:sequence>
             <xs:element name="xmlId" type="xs:string" use="required"/>
             <xs:element name="active" type="xs:boolean" use="required"/>
