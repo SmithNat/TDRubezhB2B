@@ -13,7 +13,7 @@
     </xs:complexType>
     <xs:complexType name="ContractorsType">
         <xs:sequence>
-            <xs:element name="Contractor" type="tns:ContractorType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Contractor" type="tns:ContractorType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="ContractorType">
